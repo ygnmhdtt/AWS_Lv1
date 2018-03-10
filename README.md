@@ -1,4 +1,33 @@
-AM
+# 入門AWS Lv.1
+
+## 対象者
+
+* AWSに全く触ったことがない人
+* IT/システム開発の基礎知識を持つ人
+
+## 目標
+
+AWSにおいて最も基本的なサービス郡の概要を知り、実際に使ってみることで、  
+AWSってそんなに難しくないということを知る
+
+## 本課題で触れられるAWSのサービス
+
+* IAM
+* VPC
+* EC2/EBS
+* S3
+* RDS
+* ELB
+* CloudFront
+* Route53
+* CloudWatch
+
+
+## 手順
+
+以下の課題をこなして、AWS
+
+IAM
  - IAMユーザー作成
  - MFA設定
  - IAMロール作成
@@ -35,3 +64,7 @@ AM
  - CFのエンドポイントにxxx.mmmcorp.co.jpドメインをつけて、ドメイン名でアクセスできることを確認(ALIASレコードでやる)
 - CloudWatch
  - CloudWatchメトリクスから、EC2/RDS/ELBの数値を確認
+
+## ライセンス
+
+MIT
