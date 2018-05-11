@@ -161,7 +161,7 @@ Hello World! by EC2a
 
 - 作成したEC2からRDSにログインしてください。
 - データベースにユーザーを新たに作成してください。
-- 作成してユーザーを使って、データベースに[curriculum_db.dump](https://www.dropbox.com/s/3qgan5ua2edtwwp/curriculum_db.dump?dl=0)をimportしてください。
+- 作成してユーザーを使って、データベースに[curriculum_db.dump](https://github.com/ygnmhdtt/AWS_Lv1/blob/master/curriculum_db.dump)をimportしてください。
 
 ## ステップ5: 負荷分散しよう
 
