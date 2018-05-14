@@ -10,7 +10,7 @@ MIT.
 
 # In Japanese / 日本語版
 
-(README_ja.md)[https://github.com/ygnmhdtt/AWS_Lv1/blob/master/README_ja.md] is written in Japanese.(The contents are the same.)
+[README_ja.md](https://github.com/ygnmhdtt/AWS_Lv1/blob/master/README_ja.md) is written in Japanese.(The contents are the same.)
 
 # Abstraction
 
