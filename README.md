@@ -16,16 +16,16 @@ MIT.
 
 ## Purpose
 
-本カリキュラムは、新入社員等のAWS初学者が、AWSでよく使用するサービスについての基礎を学ぶためのものです。
-そのため、不明な点がある場合は先に進まず、AWS公式ドキュメントを参照するなどして、確実に理解することを意識してください。
+Purpose of this curriculum is learning AWS basic services for AWS begginers.
+So, you shouldn't get on next step if you could not master it. Please read AWS official document or ask other skilled person.
 
-## カリキュラムの進め方
+## How to get on steps
 
-- 1~9までの課題ステップがあります。必ず1から順に実施してください。
-- IAMユーザーは、以下のルールで使用してください。
- - ステップ1: 予め作成したIAMユーザー
- - ステップ2以降:  ステップ1で作成したIAMユーザー
-- リージョンが書かれていない場合は、全て東京リージョンで作業してください。
+- Steps are 1 to 9. You should do in order.
+- Please follow these rule about IAM user:
+ - When step 1 : You should use IAM user which you already created
+ - After step 1: You should use IAM user which you created at step 1
+- Please do at your living region
 
 ## 本カリキュラムで習得するAWSサービス
 
