@@ -27,9 +27,7 @@ So, you shouldn't get on next step if you could not master it. Please read AWS o
  - After step 1: You should use IAM user which you created at step 1
 - Please do at your living region
 
-## 本カリキュラムで習得するAWSサービス
-
-本カリキュラムでは、以下のAWSマネージドサービスの基礎について習得します。
+## Services you learn with this curriculum
 
 - IAM
 - VPC
@@ -41,35 +39,38 @@ So, you shouldn't get on next step if you could not master it. Please read AWS o
 - CloudFront
 - CloudWatch
 
-# 課題ステップ
+# Steps
 
-## ステップ1: 権限の整備をしよう
+## Step 1: Prepare privilege
 
-### 1-1: IAMポリシーの作成
+### 1-1: Create IAM policy
 
-- 本カリキュラム用のIAMポリシーを作成してください。
-- 権限は、本ステップで必要とする最低限にしてください。(IAMフルアクセスのみ)
-- また、ステップ1完了時にAdministrator Accessを付与してください。
+- Create a IAM policy for this curriculum
+- Privilege must be minimum (or simply `IAM Full Access`)
+- When you have done Step 1, please fix it to `Administrator Access`
 
-###1-2: IAMグループの作成
+###1-2: Create IAM group
 
-- 本カリキュラム用のIAMグループを作成してください。
-- 1-1で作成したIAMポリシーをアタッチしてください。
+- Create a IAM group for this curriculum
+- Attach IAM policy that you have created to this group
 
-### 1-3: IAMユーザーの作成
+### 1-3: Create IAM user
 
-- 本カリキュラム用のIAMユーザーを作成してください。
- - アクセスキー・シークレットキーも併せて発行してください。
-- 1-2で作成したIAMグループに所属させてください。
+- Create a IAM user for this curriculum using password
+ - with Access key, Secret key
+- Attach this user to IAM group that you have created
 
-### 1-4: MFAの設定
+### 1-4: Configure MFA
 
-- 作成したIAMユーザーにMFAの設定を行ってください。
+- Learn about MFA
+- Configure MFA to IAM user you have created with Google Authenticator(or Authy)
 
-### 1-5: 権限の確認
+### 1-5: Check privilege
 
-- AWS CLIをローカル環境にインストールしてください。
-- AWS CLIを使って、作成したIAMユーザーの権限が絞られていることを確認してください。
+- Install AWS CLI into your local environment with pip
+- Check privilege with following command:
+ - `aws s3 ls` -> Must not do (it will show `permission denied`)
+ - `aws iam list-groups` -> Must do (it will show iam groups)
 
 ## ステップ2: ネットワークを作成しよう
 
