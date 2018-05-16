@@ -62,7 +62,7 @@ So, you shouldn't get on next step if you could not master it. Please read AWS o
 
 ### 1-4: Configure MFA
 
-- Learn about MFA
+- Study about MFA
 - Configure MFA to IAM user you have created with Google Authenticator(or Authy)
 
 ### 1-5: Check privilege
@@ -72,46 +72,46 @@ So, you shouldn't get on next step if you could not master it. Please read AWS o
  - `aws s3 ls` -> Must not do (it will show `permission denied`)
  - `aws iam list-groups` -> Must do (it will show iam groups)
 
-## ステップ2: ネットワークを作成しよう
+## Step 2: Prepare network
 
-### 2-1: VPCの作成
+### 2-1: Create VPC
 
--  VPCに指定できるIPアドレスの範囲について調査してください。
-- 任意のアドレスでVPCを作成してください。
+- Study about valid range of IP address for AWS VPC
+- Create VPC with any CIDR
 
-### 2-2: サブネットの作成
+### 2-2: Create subnet
 
-- VPC内に、サブネットをふたつ作ってください。(それぞれサブネットA、サブネットBと呼称します)
-- サブネットAとサブネットBは別AZに作成してください。
-- サブネットは、利用可能なIPアドレスが128個になるように作ってください。
+- Create 2 subnets into VPC (one is `SubnetA`, the other is `SubnetB`)
+- SubnetA and SubnetB must be placed different AZ from each other
+- Each subnet must have only 128 IP addresses
 
-### 2-3: パブリックサブネット整備
+### 2-3: Create public subnet
 
-- AWSにおいてパブリックサブネットとは何を意味するか調査してください。
-- 作成したサブネットAをパブリックサブネットにしてください。
+- Study about what `Public subnet` means in AWS
+- Make SubnetA `Public subnet`
 
-### 2-4: プライベートサブネット整備
+### 2-4: Create private subnet
 
-#### 2-4-1: NATゲートウェイ作成
+#### 2-4-1: Create NAT gateway
 
-- NATとはなにかを調査してください。
-- NATゲートウェイとはなにかを調査してください。
-- サブネットAにNATゲートウェイを作成してください。
+- Study what NAT is
+- Study what NAT Gateway is
+- Create NAT Gateway into Subnet A
 
-#### 2-4-2: プライベートサブネット構築
+#### 2-4-2: Create private subnet
 
-- AWSにおいてプライベートサブネットとは何を意味するかを調査してください。
-- 作成したNATゲートウェイを使って、サブネットBをプライベートサブネットにしてください。
+- Study what `Private subnet` means in AWS
+- Make SubnetB `Private subnet` with NAT gateway
 
-### 2-5: サブネットのIPアドレス
+### 2-5: IP Address of Subnet
 
-- サブネット内のIPアドレスのうち、5IPは使用できません。理由を調査してください。
+- 5 IP Address per subnet cannot be used. Study why.
 
-### 2-6: セキュリティグループ作成
+### 2-6: Create security group
 
-- VPCにセキュリティグループを作成してください。
-- インバウンドはマイIPからのSSH接続、HTTP接続のみとしてください。
-- アウトバウンドはグローバルに開放してください。
+- Create security group into VPC
+- Inbound traffic must be authorized from only your local IP address
+- Outbound traffic must be globally opened
 
 ## ステップ3: 仮想サーバーを作成しよう
 
