@@ -113,38 +113,38 @@ So, you shouldn't get on next step if you could not master it. Please read AWS o
 - Inbound traffic must be authorized from only your local IP address
 - Outbound traffic must be globally opened
 
-## ステップ3: 仮想サーバーを作成しよう
+## Step 3: Create virtual server
 
-### 3-1: EC2作成
+### 3-1: Create EC2
 
-- EC2のインスタンスタイプごとの違いについて調査してください。
-- AZとはなにか？について調査してください。
-- 以下の要件のEC2をサブネットAに作成してください。
+- Study about diferrence between EC2 instance types
+- Study what `AZ` is
+- Create EC2 at SubnetA like this:
  - OS: Ubuntu LTS
- - ストレージ: 50GB(エフェメラルストレージは初期設定のままとする)
- - インスタンスタイプ: t2.small
- - タã°を活用して、カリキュラム用ということがわかるような名前をつけてください
- - 2-6で作成したセキュリティグループを付けてください
- - 起動時にnginxがインストールされるようにしてください(ユーザーデータを使う)(バージョンは任意)
- - キーペアは個別で発行してください
+ - Storage: 50GB
+ - Instance type: t2.small
+ - Use tag to name instance
+ - Attach security group you have created at step 2-6
+ - Use userdata to install nginx (any version is ok)
+ - Create key pair
 
-### 3-2: EC2にログイン
+### 3-2: Login EC2
 
-#### 3-2-1:  サーバースペックの確認
-- 作成したEC2にSSHログインしてください。
-- `nginx -v` でnginxがインストールされていることを確認してください。
-- `df -h` でストレージが50GBなことを確認してください。
-- `cat /etc/lsb-release` でディストリビューションがUbuntuなことを確認してください。
+#### 3-2-1:  Check server spec
+- Log in EC2 by SSH
+- Do `nginx -v` to make sure nginx is installed
+- Do `df -h` to make sure storage is 50GB
+- Do `cat /etc/lsb-release` to make sure linux distribution is Ubuntu
 
-#### 3-2-2: nginxの活用
-- インストールされているnginxを使って、以下のindex.htmlを配信してください。
+#### 3-2-2: Use nginx
+- Create `index.html` like below and deliver it to internet with nginx
 
 index.html
 ```
 Hello World! by EC2a
 ```
 
-- ブラウザから、上記のindex.htmlにアクセスしてください。
+- Access and see above index.html with your web browser
 
 ## ステップ4: データベースを作成しよう
 
