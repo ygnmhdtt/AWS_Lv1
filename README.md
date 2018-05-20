@@ -252,22 +252,22 @@ Hello World! by S3
 
 - Access distribution and make sure that you can see index.html
 
-## ステップ8: 独自ドメインを使ってみよう
+## Step 8: Use original domain
 
-### 8-1: ELB用サブドメイン作成
+### 8-1: Create domain for ELB
 
-- Route53について調査してください。
-- DNSレコードについて調査してください。
-- ALIASレコードについて調査してください。
-- TTLについて調査してください。
-- 適当なドメインを作成し、ELBへのALIASレコードを作成してください。
-- DNSの浸透について調査してください。
-- 作成したドメインにブラウザからアクセスして、ELBからのデータが返ってくることを確認してください。
+- Study about Route53
+- Study about DNS record
+- Study about ALIAS record
+- Study about TTL
+- Get any domain and set ALIAS record to ELB
+- Study about sinking of DNS
+- Access domain and make sure that you can get response from ELB
 
-### 8-2: CloudFront用サブドメイン作成
+### 8-2: Create domain for CloudFront
 
-- 8-1で作成したドメインと別のドメインを作成し、CLoudFrontへのALIASレコードを作成してください。
-- 作成したドメインにブラウザからアクセスして、CloudFrontからのデータが返ってくることを確認してください。
+- Get another domain (subdomain is ok) and set ALIAS record to CloudFront distribution
+- Access domain and make sure that you can get response from CloudFront
 
 ## ステップ9: メトリクスを見てみよう
 
