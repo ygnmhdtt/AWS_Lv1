@@ -146,27 +146,27 @@ Hello World! by EC2a
 
 - Access and see above index.html with your web browser
 
-## ステップ4: データベースを作成しよう
+## Step 4: Create database
 
-### 4-1: RDS作成
-- マルチAZとはなにか？について調査してください。
-- フェイルオーバーとはなにか？について調査してください。
-- 以下の要件のRDSをサブネットBに作成してください。
- - セキュリティグループ: 作成したEC2からのみ開放する(新規にSGを作成してください)
- - MySQL互換(バージョンは任意)
- - インスタンスタイプ: db.t2.medium
- -マルチAZ: いいえ
- - マスターユーザー: root
- - マスターユーザーパスワード: LzXyDQbYYfTn
- - パブリックアクセシビリティ: いいえ
- - データベースの名前: curriculum_db
- - 暗号化: 無効
+### 4-1: Create RDS
+- Study what `Multi-AZ` is
+- Study what `failover` is
+- Create RDS at SubnetB like this:
+ - Security group: Create new security group and allow traffic only from EC2 you have created
+ - MySQL5.6
+ - instance type: db.t2.medium
+ - Multi-AZ: No
+ - master user: root
+ - master user password: LzXyDQbYYfTn
+ - public access: No
+ - name of database: curriculum_db
+ - encryption: disables
 
-### 4-2: RDS活用
+### 4-2: Use RDS
 
-- 作成したEC2からRDSにログインしてください。
-- データベースにユーザーを新たに作成してください。
-- 作成してユーザーを使って、データベースに[curriculum_db.dump](https://github.com/ygnmhdtt/AWS_Lv1/blob/master/curriculum_db.dump)をimportしてください。
+- Login RDS from EC2
+- Create new database user
+- Import [curriculum_db.dump](https://github.com/ygnmhdtt/AWS_Lv1/blob/master/curriculum_db.dump) into database by new user
 
 ## ステップ5: 負荷分散しよう
 
