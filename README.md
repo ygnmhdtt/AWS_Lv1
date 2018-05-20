@@ -168,51 +168,51 @@ Hello World! by EC2a
 - Create new database user
 - Import [curriculum_db.dump](https://github.com/ygnmhdtt/AWS_Lv1/blob/master/curriculum_db.dump) into database by new user
 
-## ステップ5: 負荷分散しよう
+## Step 5: Loadbalancing
 
-### 5-1: EC2作成
+### 5-1: Create EC2
 
-- すでに作成したEC2のAMIを取得し、もう1台EC2を作成してください。(すでに作成されたものをEC2a、今回作るものをEC2bと呼称します)
-- EC2bにインストールされているnginxを使って、以下のindex.htmlを配信してください。
+- Prepare AMI from EC2 already created, and create new EC2 from that AMI (We call this EC2 `EC2B`, and already created one is `EC2A`)
+- Create `index.html` like below and deliver it to internet with nginx of EC2B
 
 index.html
 ```
-Hello World! by EC2b
+Hello World! by EC2B
 ```
 
-- ブラウザから、上記のindex.htmlにアクセスしてください。
+- Access and see above index.html with your web browser
 
-###5-2: ALB作成
+### 5-2: Create ALB
 
-- サーバの負荷分散について調査してください。
-- ELBとはなにか？について調査してください。
-- CLB、ALB、NLBの違いについて調査してください。
-- 以下の要件のALBを作成してください。
- - スキーム: インターネット向け
- - IPアドレスタイプ: IPv4
- - リスナー: HTTP
- - ターゲットグループにはEC2a、EC2bを登録
- - セキュリティグループはマイIPからのHTTP接続のみをインバウンド許可してください
+- Study about loadbalancing servers
+- Study what ELB is
+- Study about difference from CLB, ALB, NLB
+- Create ALB like this:
+ - Scheme: Internet facing
+ - IP address type: IPv4
+ - Listener: HTTP
+ - Target group: EC2A, EC2B
+ - Security group: Create new security group and allow traffic only from My-IP
 
-### 5-3: ALB活用
+### 5-3: Use ALB
 
-- 正しく負荷分散されていれば、
+- If loadbalancing is configured correctly, both
 
 ```
 Hello World! by EC2a
 ```
 
-と
+and
 
 ```
 Hello World! by EC2b
 ```
 
-の両方が配信されます。ブラウザからこのことを確認してください。
+will be delivered. Make sure this with your browser.
 
-### 5-4: HTTPS化
+### 5-4: Enable HTTPS
 
-作成したALBを、HTTPSでアクセスできるようにしてください。
+- Make this ALB HTTPS-Accessable
 
 ## ステップ6: S3を使ってみよう
 
