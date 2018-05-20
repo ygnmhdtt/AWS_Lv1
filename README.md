@@ -293,10 +293,10 @@ Hello World! by S3
  - DatabaseConnections
  - BurstBalance
 
-## ステップ10: 後片付けをしよう
+## Step 10: Cleaning
 
-- 今回作成した全てのAWSリソースにかかったコストをコストエクスプローラから確認してください。
-- 作成した全てのリソースを削除してください :cry:  ( **以下の番外編に進む方は、削除しないでください!!!!** )
+- Check how it costed with resources you have created
+- Clean all resources :cry: ( **If you want to do optional lessons, you don't need to do this!!** )
 
 # あとがき
 お疲れさまでした。 あなたはAWS入門カリキュラム基礎編を一通り完遂しました!!
