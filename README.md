@@ -214,15 +214,15 @@ will be delivered. Make sure this with your browser.
 
 - Make this ALB HTTPS-Accessable
 
-## ステップ6: S3を使ってみよう
+## Step 6: Use S3
 
-### 6-1: コンテンツアップロード
+### 6-1: Upload contents
 
-- S3が `イレブン・ナイン` と呼ばれる理由を調査してください。
-- バケットポリシー・ACLの違いについて調査してください。
-- S3の結果整合性について調査してください。
-- S3にcurriculumバケットを作成してください。
-- 作成したバケットに以下のindex.htmlをアップロードしてください。
+- Study why S3 is called `Eleven-nine`
+- Study about difference from Bucket policy and ACL
+- Study about `Eventual Consistency` of S3
+- Create `curriculum` bucket
+- Upload this index.html to curriculum bucket
 
 index.html
 
@@ -230,11 +230,11 @@ index.html
 Hello World! by S3
 ```
 
-### 6-2: 静的サイトホスティング
+### 6-2: Static Web hosting
 
-- 作成したバケットで静的サイトホスティングを有効化してください。
-- ブラウザからアクセスし、作成したindex.htmlが返ってくることを確認してください。
-- 静的サイトホスティングするメリットを調査してください。
+- Enable static web hosting with curriculum bucket
+- Access S3 endpoint from browser and make sure that you can see index.html
+- Study about advantage of static web hosting
 
 ##ステップ7: CDNを使ってみよう
 
