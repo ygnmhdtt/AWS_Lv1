@@ -234,23 +234,23 @@ Hello World! by S3
 
 - Enable static web hosting with curriculum bucket
 - Access S3 endpoint from browser and make sure that you can see index.html
-- Study about advantage of static web hosting
+- Study about advantages of static web hosting
 
-##ステップ7: CDNを使ってみよう
+## Step 7: Use CDN
 
-### 7-1: ディストリビューション作成
+### 7-1: Create distribution
 
-- CloudFront(CDN)を使用するメリット・その仕組みを調査してください。
-- 以下の要件でCloudFrontディストリビューションを作成してください。
- - オリジン: 作成したS3バケット
- - オリジンパス: 作成したindex.html
+- Study about advantages and mechanism of CDN
+- Create CloudFront distribution like this:
+ - Origin: S3 bucket already created
+ - Origin path: index.html
  - Restrict Bucket Access: No
- - キャッシュは1時間(オリジン側は一旦考えなくて大丈夫です)
- - HTTPS化はしない
+ - Cache: 1 hour
+ - Don't enable HTTPS
 
-### 7-2: ディストリビューション活用
+### 7-2: Use distribution
 
-- 作成したディストリビューションにアクセスし、index.htmlが返ってくることを確認してください。
+- Access distribution and make sure that you can see index.html
 
 ## ステップ8: 独自ドメインを使ってみよう
 
