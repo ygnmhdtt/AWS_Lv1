@@ -269,11 +269,11 @@ Hello World! by S3
 - Get another domain (subdomain is ok) and set ALIAS record to CloudFront distribution
 - Access domain and make sure that you can get response from CloudFront
 
-## ステップ9: メトリクスを見てみよう
+## Step 9: Check metrics
 
-### 9-1: EC2メトリクス
+### 9-1: EC2
 
-- 作成したEC2について、以下のメトリクスをCloudWatchから確認してください。(それぞれが何を意味するかも調査してください)
+- Check below metrics about EC2 already created from CloudWatch (And, study what they mean)
  - CPUUtilization
  - CPUCreditBalance
  - NetworkIn
@@ -282,11 +282,11 @@ Hello World! by S3
  - DiskWriteOps
  - NetworkPacketsIn
  - NetworkPacketsOut
-- EC2メトリクスではメモリ使用率を計測できません。どうすれば計測できるかを調査してください。
+- You cannot check memory utilization with CloudWatch. Study how you can check it
 
-### 9-2: RDSメトリクス
+### 9-2: RDS
 
-- 作成したRDSについて、以下のメトリクスをCloudWatchから確認してください。(それぞれが何を意味するかも調査してください)
+- Check below metrics about RDS already created from CloudWatch (And, study what they mean)
  - CPUUtilization
  - FreeableMemory
  - SwapUsage
