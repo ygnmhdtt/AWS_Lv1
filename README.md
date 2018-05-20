@@ -298,20 +298,18 @@ Hello World! by S3
 - Check how it costed with resources you have created
 - Clean all resources :cry: ( **If you want to do optional lessons, you don't need to do this!!** )
 
-# あとがき
-お疲れさまでした。 あなたはAWS入門カリキュラム基礎編を一通り完遂しました!!
-AWSは非常にサービスが多く、全てを把握するのは非常に難しいですが、
-AWSでよく使うサービスについての基礎知識は学べたかと思います。
+# Afterword
+Well done! You finished all steps of this curriculum.
+AWS has many services, and it's difficult to understand all of them.
+But, you know basic knowledge of popular services now.
 
-余裕があれば、以下の `番外編` にもチャレンジしてみてください!!!
+If you want to do more, do `Optional` !!
 
-### 番外編
+### Optional
 
-ここからはオプションなため、実施するかどうかは自分で決めてください。
-
-- SSLターミネーションについて調査しよう
-- CloudFrontもHTTPS化してみよう
-- スポットインスタンスを使ってみよう
-- RDSをマルチAZにして、強制フェイルオーバーしてみよう
-- EC2にEIPをつけてみよう
-- ELBでweighted round robinしてみよう
+- Study about `SSL Termination`
+- Enable CloudFront distribution HTTPS
+- Study and use spot instance
+- Make RDS Multi-AZ and do force failover
+- Attach EIP to EC2
+- Do `weighted round robin` with ELB
