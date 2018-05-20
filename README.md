@@ -49,7 +49,7 @@ So, you shouldn't get on next step if you could not master it. Please read AWS o
 - Privilege must be minimum (or simply `IAM Full Access`)
 - When you have done Step 1, please fix it to `Administrator Access`
 
-###1-2: Create IAM group
+### 1-2: Create IAM group
 
 - Create a IAM group for this curriculum
 - Attach IAM policy that you have created to this group
