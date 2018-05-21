@@ -166,7 +166,6 @@ Hello World! by EC2a
 
 - Login RDS from EC2
 - Create new database user
-- Import [curriculum_db.dump](https://github.com/ygnmhdtt/AWS_Lv1/blob/master/curriculum_db.dump) into database by new user
 
 ## Step 5: Loadbalancing
 
